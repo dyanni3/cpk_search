@@ -20,7 +20,7 @@ On subsequent runs you only need to open up a terminal window, navigate to the f
 
 ###
 To Do
--make desktop icon
--debug for windows users
--index by date
--key terms for selected set of documents / more like this 
+- make desktop icon
+- debug for windows users
+- index by date
+- key terms for selected set of documents / more like this 
