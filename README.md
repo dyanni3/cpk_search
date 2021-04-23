@@ -10,9 +10,17 @@ search text chicago police killing text documents
 3) Clone this repo or copy the files into the same directory as the text data
 4) Open up a terminal and navigate to the data directory
 5) Install the requirements `pip install -r requirements.txt`
-6) Index the documents (stores & organizes all the terms for future searching use, only do this the first time you set up the project) `python whoosh_index.py` on mac and `py whoosh_index.py` on Windows
-7) Now run the search program! `python search.py` on mac and `py search.py` on windows. You should see an interactive command line interface like in the screenshot above :smile:
-8) Using the program should be self explanatory, email David with questions and/or requests for additional functionality.
+6) (Due to a mistake I made you may also have to `pip install colorama` )
+7) Index the documents (stores & organizes all the terms for future searching use, only do this the first time you set up the project) `python whoosh_index.py` on mac and `py whoosh_index.py` on Windows
+8) Now run the search program! `python search.py` on mac and `py search.py` on windows. You should see an interactive command line interface like in the screenshot above :smile:
+9) Using the program should be self explanatory, email David with questions and/or requests for additional functionality.
 
 
 On subsequent runs you only need to open up a terminal window, navigate to the folder, and start the search program.
+
+###
+To Do
+-make desktop icon
+-debug for windows users
+-index by date
+-key terms for selected set of documents / more like this 
