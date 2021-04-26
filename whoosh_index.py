@@ -4,6 +4,7 @@ from whoosh.qparser import QueryParser
 import glob
 import os
 import tqdm
+import codecs
 
 schema = Schema(
     title=TEXT(stored=True), path=ID(stored=True), content=TEXT(stored=True)
@@ -18,7 +19,7 @@ writer = ix.writer()
 texts = glob.glob("*.txt")
 print(f"Found {len(texts)} documents, indexing...")
 for i, txt in enumerate(tqdm.tqdm(texts)):
-    with open(txt, "r") as f:
+    with codecs.open(txt, "r", "utf-8") as f:
         writer.add_document(title=txt, path=str(i), content=f.read())
 print("Committing documents...")
 writer.commit()
